@@ -1,0 +1,118 @@
+body{
+	font-family: "SF UI Text", sans-serif;
+}
+.catalog{
+	margin-top: 32px;
+	margin-left: 216px;
+}
+.stage_1{
+	font-size: 16px;
+	margin-bottom: 32px;
+}
+.stage_2{
+	font-family: "SF Pro Display";
+	font-size: 32px;
+	margin-bottom: 32px;
+}
+
+.input_text{
+	margin-left: 16px;
+	font-size: 12px;
+	color: 4F4F4F;
+}
+.input_text2{
+	margin-left: 48px;
+	font-size: 12px;
+	color: 4F4F4F;
+}
+.input_rec{
+	margin-top: 6px;
+	margin-left: px;
+	font-size: 14px;
+	padding: 9px 5px 9px 16px;
+	background-color: F2F2F2;
+}
+.input_rec2{
+	margin-top: 6px;
+	margin-left: 32px;
+	font-size: 14px;
+	padding: 9px 5px 9px 16px;
+	background-color: F2F2F2;
+}
+.stage_4{
+	margin-left: 168px;
+}
+select{
+	background-color: F2F2F2;
+	border: 0px;
+}
+.discount{
+	top: 8px;
+	left: 0px;
+	position: absolute;
+	font-size: 14px;
+	padding: 3px 16px 3px 16px;
+	background-color: EB5757;
+	color: white;
+}
+
+.w_name{
+	margin-bottom: 9px;
+	font-size: 10px;
+	color: 888888;
+}
+.name1{
+	margin-bottom: 9px;
+	font-size: 18px;
+}
+.name{
+	margin-top: 20px;
+	margin-bottom: 9px;
+	font-size: 18px;
+}
+.price{
+	margin-bottom: 9px;
+	font-size: 16px;
+	
+}
+.f1{
+	
+	margin-left: 49px;
+	margin-right: 49px;
+	
+}
+.f2{
+	
+	margin-left: 49px;
+	margin-right: 49px;
+	
+	
+}
+div{
+	display: inline-block;
+}
+td{
+	position: relative;
+	
+	
+}
+.block{
+
+	position: absolute;
+	top: 269;
+	left: 12.2px;
+	
+}
+
+.right_bar{
+	position: absolute;
+	top: 50px;
+	left: 246px;
+}
+.img{
+	position: absolute;
+	top: 50px;
+	left: 289px;
+}
+
+
