@@ -1,0 +1,122 @@
+div{
+	display: inline-block;
+}
+.catalog {
+    margin-top: 32px;
+    margin-left: 216px;
+}
+
+.stage_1 {
+	font-family: SF UI Text;
+    src: url("sf-ui-text-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.stage_2 {
+    font-family: "SF Pro Display";
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.filters {
+    display: flex;
+    
+    margin-bottom: 48px; 
+}
+
+.filter-group {
+    display: flex;
+    
+	flex-direction: column;
+    gap: 6px; 
+}
+
+.input-text {
+	margin-left: 16px;
+    font-size: 12px;
+    color: #4F4F4F;
+}
+
+select {
+    background-color: #EEEEEE;
+    width: 288px;
+	height: 40px;
+	border: 0px;
+	margin-right: 24px;
+	text-indent: 16px;
+    font-size: 14px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    
+}
+
+.product-card {
+    position: relative;
+    border: 1px solid #EEEEEE;
+    width: 356px;
+    height: 352px;
+    overflow: hidden;
+}
+
+.product-info {
+    position: absolute;
+    top: 290px;
+    left: 12.2px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.w_name{
+	position: absolute;
+    top: 269px;
+    left: 12.2px;
+	font-size:10px;
+}
+.product-name {
+    font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.product-price {
+	
+    font-size: 16px;
+    
+    
+}
+
+.product-discount {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    background-color: #EB5757;
+    color: white;
+    padding: 3px 16px;
+    font-size: 14px;
+}
+.f1{
+	margin-left: 49px;
+}
+.icons1{
+	position: absolute;
+    top: 30px;
+    left: 257px;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	
+}
+.icons{
+	position: absolute;
+    top: 30px;
+    left: 295px;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;	
+}
