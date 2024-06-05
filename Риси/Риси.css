@@ -1,0 +1,62 @@
+.ad-container {
+    display: flex;
+	flex-direction: row;
+	gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #f0f0f0;
+	
+}
+img{
+	height: 200px;
+	
+	
+}
+
+.ad-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ad-card:hover {
+    transform: scale(1.05);
+	
+}
+
+
+
+.learn-more-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.ad-info {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
+}
+@keyframes glowing {
+    0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+    50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
+	100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+}
+.learn-more-btn {
+      animation: glowing 1300ms infinite;
+ }
+ 
+	  
+
