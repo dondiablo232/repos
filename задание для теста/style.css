@@ -43,7 +43,15 @@ body{
 	margin-left:16px;
 	margin-bottom: 6px;
 }
-.select{
+.sort-select{
+	width: 288px;
+	height: 40px;
+	border:0;
+	background-color: #EEEEEE;
+	text-indent: 16px;
+    font-size: 14px;
+}
+.material-select{
 	width: 288px;
 	height: 40px;
 	border:0;
@@ -113,7 +121,17 @@ body{
 .price{
 	font-size:16px;
 	color:#888888;
+	
+}
+.price-through{
+	font-size:16px;
+	color:#888888;
 	text-decoration: line-through;
+}
+.discount-price{
+	font-size:16px;
+	color:#888888;
+	
 }
 .price-block{
 	display:flex;
@@ -125,4 +143,16 @@ body{
 	gap:28px;
 	margin-right:22px;
 	
+}
+.clickable-icon {
+	background-color; red;
+    transition: all 0.3s ease; 
+}
+
+.clickable-icon:hover {
+    cursor: pointer; 
+}
+
+.clickable-icon.clicked {
+    filter: brightness(50%); 
 }
