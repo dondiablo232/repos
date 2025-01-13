@@ -12,20 +12,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			const btns = document.querySelectorAll('.btn');
 			
-			btns.forEach(function (btn) {
+			btns.forEach(function(btn){
+
+				
+				const id = btn.getAttribute("data-id");
+				const color = localStorage.getItem(`color_${id}`);
+				const icon = localStorage.getItem(`icon_${id}`);
+
+				if (color) {
+					btn.style.color = color;
+					btn.querySelector('i').classList.replace(icon === 'far' ? 'fas' : 'far', icon);
+				}
+
 				btn.addEventListener("click", function (event) {
+
+					
+
 					if (btn.style.color === "red") {
 						btn.querySelector('i').classList.replace('fas', 'far')
 						btn.style.color = "black";
-						
+						localStorage.setItem(`icon_${id}`, 'far');
 					}
 					else {
 						btn.querySelector('i').classList.replace('far', 'fas')
 						btn.style.color = "red";
-						
+						localStorage.setItem(`icon_${id}`, 'fas');
 					}
+
+					localStorage.setItem(`color_${id}`, btn.style.color)
+					
 				});
-			});
+			})
 		}
 
 		
@@ -42,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			price: 35,
 			interactiv_img1: "icon1.png", 
 			material: "steel",
+			id: "1",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -54,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			price: 355,
 			interactiv_img1: "icon2.png",
 			material: "aluminum",
+			id: "2",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -63,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			old_price: 136,
 			price: 99,
 			material: "steel",
+			id: "3",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -71,6 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			name: "стандартные петли",
 			price: 75,
 			material: "steel",
+			id: "4",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -80,6 +105,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			old_price: 270,
 			price: 200,
 			material: "aluminum",
+			id: "5",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -89,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			old_price: 500,
 			price: 450,
 			material: "aluminum",
+			id: "6",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -97,6 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			name: "стандартные петли",
 			price: 89,
 			material: "steel",
+			id: "7",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -106,6 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			old_price: 300,
 			price: 150,
 			material: "aluminum",
+			id: "8",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -113,7 +146,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			img: "товар3.png",
 			name: "стандартные петли",
 			price: 180,
-			material: "steel"
+			material: "steel",
+			id: "9",
+			icon_class: "far fa-heart"
 		},
 
 		{
@@ -122,6 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			name: "петля со стопором",
 			price: 232,
 			material: "aluminum",
+			id: "10",
+			icon_class: "far fa-heart"
 
 		},
 
@@ -131,6 +168,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			name: "стандартные петли",
 			price: 4,
 			material: "aluminum",
+			id: "11",
+			icon_class: "far fa-heart"
 
 		},
 
@@ -141,6 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			old_price: 25,
 			price: 7,
 			material: "steel",
+			id: "12",
+			icon_class: "far fa-heart"
 		}
 
 	]
@@ -181,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function () {
 								<div class = "product-card__interactiv">
 									<img src="icon1.png" alt="icon1" class = "clickable-icon">
 									
-									<button class="btn"><i class="far fa-heart"></i></button>
+									<button class="btn" data-id = "${item.id}"><i class="${item.icon_class}"></i></button>
 								</div>
 							</div>
 						</div>
@@ -222,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
 									<div class = "product-card__interactiv">
 										
 										
-										<button class="btn"><i class="far fa-heart"></i></button>
+										<button class="btn" data-id = "${item.id}"><i class="far fa-heart"></i></button>
 									</div>
 								</div>
 							</div>
@@ -255,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
 									<div class = "product-card__interactiv">
 										
 										
-										<button class="btn"><i class="far fa-heart"></i></button>
+										<button class="btn" data-id = "${item.id}"><i class="far fa-heart"></i></button>
 									</div>
 								</div>
 							</div>
@@ -290,6 +331,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				
 				
 			})
+
+			
 			
 			render(products)
 			btn_function()
