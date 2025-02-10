@@ -15,16 +15,21 @@ body{
 
 @font-face{
 	font-family: "Sf pro display";
-	src: url("SFPRODISPLAYMEDIUM.otf");
+	src: url("SF-Pro-Display-Semibold.otf");
 	
+}
+
+@font-face{
+	font-family: "SF-Pro-Display-Medium";
+	src: url("SF-Pro-Display-Medium.otf")
 }
 
 .conteiner{
 	max-width: 1488px;
 	margin: 0 auto;
-	margin-top: 32px;
+	margin-top: 31px;
 	margin-bottom: 113px;
-	padding: 5px;
+	
 }
 
 .header__site-navigation p {
@@ -33,10 +38,10 @@ body{
 	font-family: "Sf ui text";
 	font-weight: 400;
 	font-size: 16px;
-	margin-bottom: 32px;
+	margin-bottom: 33px;
 }
 .tab{
-	word-spacing: 15px;
+	word-spacing: 9px;
 }
 
 .header h1 {
@@ -45,13 +50,33 @@ body{
 	font-family: "Sf pro display";
 	font-weight: 600;
 	font-size: 36px;
+	
 	margin-bottom: 32px;
 }
 
+.header{
+	margin-bottom: 36px;
+}
+
 .filter{
+
+	display: flex;
+	flex-direction: row;
+	gap:24px;
+	margin-bottom: 40px;
+}
+
+.filter__select{
 	display: flex;
 	flex-direction: row;
 	gap: 24px;
+	
+}
+
+.my_likes{
+	display: flex;
+	align-items: flex-end;
+	
 }
 
 .filter__parametr{
@@ -62,14 +87,14 @@ body{
 	font-size: 12px;
 	color: #4F4F4F;
 	text-indent: 16px;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 }
 
 .filter__group{
 	width: 288px;
 	display:flex;
 	flex-direction:column;
-	margin-bottom: 41px;
+	
 }
 
 .select-box-material{
@@ -78,7 +103,7 @@ body{
 	border:0;
 	outline: 0;
 	background-color: #EEEEEE;
-	text-indent: 16px;
+	text-indent: 12px;
 	font-family: "Sf pro display";
 	font-weight: 400;
     font-size: 14px;
@@ -90,7 +115,7 @@ body{
 	border:0;
 	outline: 0;
 	background-color: #EEEEEE;
-	text-indent: 16px;
+	text-indent: 12px;
 	font-family: "Sf pro display";
 	font-weight: 400;
     font-size: 14px;
@@ -100,7 +125,8 @@ body{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	gap: 48px;
+	column-gap: 48px ;
+	row-gap:35px;
 }
 
 .product-card{
@@ -109,12 +135,14 @@ body{
 }
 
 .discount{
+	font-family: "SF-Pro-Display-Medium";
+	font-weight: 500px;
 	position:absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 20px;
-	padding-right:20px;
+	padding-left: 16px;
+	padding-right:17px;
 	height:24px;
 	background-color: #EB5757;
     color: white;
@@ -134,18 +162,18 @@ body{
 
 .product-card__img{
 	width: calc(100% - 98px);
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	
 }
 
-.product-card__discription{
+.product-card__description{
 	margin-left: 12.2px;
 	margin-bottom: 10px
 }
 
 
 
-.product-card__model{
+.product-card__model {
 	position: absolute;
 	font-size:10px;
 	font-weight:400;
@@ -158,8 +186,8 @@ body{
 
 
 .product-card__name{
-	padding-top: 16px;
-	font-weight:500;
+	padding-top: 24px;
+	font-weight:600;
 	font-family:  'SF UI Text';
 	font-size:16px;
 	margin: 0;
@@ -177,15 +205,19 @@ body{
 .product-card__cost{
 	display:flex;
 	flex-direction:row;
+	font-family: "Sf ui text";
+	font-size: 16px;
 	gap:9.14px;
 	
 }
 
 .product-card__cost p{
+	
 	margin: 0;
 }
 
 .product-card__old-cost{
+	font-family: "Sf ui text";
 	font-size:16px;
 	color:#888888;
 	text-decoration: line-through;

@@ -21,44 +21,51 @@
 	
 	<main>
 		<section class = "filter">
-			<div class = "filter__group">
-				<p class = "filter__parametr">
-					Сортировать по:
-				</p>
-			
-				<select class = "select-box-cost">
-					
-					<option value = "ascending">Цена по возростанию</option>
+			<div class = "filter__select">
+				<div class = "filter__group">
+					<p class = "filter__parametr">
+						Сортировать по:
+					</p>
 				
-					<option value = "descending">Цена по убыванию</option>
-				</select>
+					<select class = "select-box-cost">
+						
+						<option value = "ascending">Цена по возростанию</option>
+					
+						<option value = "descending">Цена по убыванию</option>
+					</select>
+				</div>
+				
+				<div class = "filter__group">
+					<p class = "filter__parametr">
+						Материал
+					</p>
+				
+					<select class = "select-box-material">
+						
+					
+						<option value = "aluminum">Металл</option>
+					
+						<option value = "steel">Сталь</option>
+					</select>
+				</div>
+				
 			</div>
-			
-			<div class = "filter__group">
-				<p class = "filter__parametr">
-					Материал
-				</p>
-			
-				<select class = "select-box-material">
-					
-				
-					<option value = "aluminum">Алюминий</option>
-				
-					<option value = "steel">Сталь</option>
-				</select>
+
+			<div class = "my_likes">
+				<input  class = "likes_select" type = "checkbox" >Избранное</input>
 			</div>
 		</section>
 		
 		<section class = "content">
 			<div class = "cards">
 				<div class = "product-card">
-					<p class = "discount">Скидка</p>
+					<p class = "discount">Cкидка</p>
 					
 					<div class = "product-card__img-conteiner">
 						<img src="товар1.png" alt="товар1" class = "product-card__img"></img>
 					</div>
 					
-					<div class = "product-card__discription">
+					<div class = "product-card__description">
 						<p class = "product-card__model">L422WH</p>
 						
 						<p class = "product-card__name">Ручка дверная</p>
