@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "style_форма.css">
+	
+    </link>
+    <script type="text/javascript" src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+    <title>Тачка на прокачку</title>
+<script>
+
+function handleFormSubmit() {
+    
+   let name = document.getElementById("name").value
+   
+	alert(name + ", ваш отзыв отправлен!!!");
+
+    return true;
+}
+</script>
+
+
+</head>
+<body>
+	<header class = "header">
+		<section class = "container ">
+			<div class = "header__conteiner">
+				<a href = "index.html"><img src = "img/istockphoto-1248231815-1024x1024 1.png" class = "header__logo"></a>
+
+				<section class = "header__rightbar">
+					<h1 class = "header__name">
+						Барбершоп БРАТ
+					</h1>
+
+					<nav class = "header__nav">
+
+						<a href = "index.html" class = nav__link>Главная</a>
+						<a href = "услуги.html" class = nav__link>Услуги</a>
+						<a href = "отзывы.html" class = nav__link>Отзывы</a>
+							
+					</nav>
+				</section>
+			</div>
+		</section>
+	</header>
+	<div class="form-container">
+        <h2>Оставить отзыв</h2>
+        <form action="submit.php" method="post">
+            <div class = "obhod">
+                <div class="input-block">
+                    <input type="text" id = "name" name="name" placeholder="Имя" >
+                </div>
+                <div class="input-block-otz">
+                    <input type="otz" name="otz"  placeholder="Ваш отзыв" >
+                </div>
+                
+            </div>
+            
+            <button type="submit" onclick="handleFormSubmit(); return false;">Отправить</button>
+        </form>
+    </div>
+    <footer class = "footer">
+		<section class = "container footer__conteiner">
+			<div class = "footer__content">
+				<p class = "footer__des">Адрес: г. Уфа, ул. Ленина 7, кв. 121</p>
+
+				<div class = "footer__media">
+
+					<div class = "media">
+						<img src="img/Group.png" alt="" class = "media__img">
+
+						<p class = "media__des">
+							<a href="#" class = "media__link">BRAT.102</a>
+						</p>
+					</div>
+
+					<div class = "media">
+						<img src="img/Vector.png" alt="" class = "media__img">
+
+						<p class = "media__des">
+							<a href="#" class = "media__link">BRAT.102</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>
