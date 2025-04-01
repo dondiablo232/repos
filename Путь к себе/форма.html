@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "style_форма.css">
+	
+    </link>
+    <script type="text/javascript" src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+    <title>Тачка на прокачку</title>
+<script>
+
+function handleFormSubmit() {
+
+    
+   
+	alert("Мы записали вас на консультацию, ожидайте");
+
+}
+</script>
+
+
+</head>
+<body>
+	<section class = "header">
+
+        <div class = "conteiner header__conteiner">
+            <a href="index.html"><img src="imgs/logo 1.png" class = "header__logo"></a>
+        
+            <div class = "header__right-bar">
+                <h1 class="header__name">
+                    Кабинет психолога <span class="white">Путь к себе</span>
+                </h1>
+
+                <nav class="header__nav">
+                    <a href="index.html" class="header__link">Главна</a>
+                    <a href="Каталог.html" class="header__link">каталог</a>
+                    <a href="О нас.html" class="header__link">О нас</a>
+                    
+                </nav>
+                
+            </div>
+        </div>
+    
+        
+        
+    </section>
+	<div class="form-container">
+        <h2>Запись на консультацию</h2>
+        <form action="submit.php" method="post">
+            <div class = "obhod">
+                <div class="input-block">
+                    <input type="text" name="name" placeholder="Имя" >
+                </div>
+                <div class="input-block">
+                    <input type="tel" name="phone" id = "phoneInput" placeholder="Услуга" >
+                </div>
+                
+            </div>
+            
+            <button type="submit" onclick="handleFormSubmit(); return false;">Записатьтся на консультацию</button>
+        </form>
+    </div>
+    <section class = "footer">
+
+        <div class = "conteiner footer__conteinerIdex">
+            <img src="imgs/vk2 1.png" alt="" class="media">
+            <img src="imgs/tg 1.png" alt="" class="media">
+            <img src="imgs/icons-instargam-dtf-magazine-2 1.png" alt="" class="media">
+
+            <span class="med__text">
+                Faizov
+            </span>
+        </div>
+        
+
+    </section>
+</body>
+</html>

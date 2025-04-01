@@ -1,0 +1,269 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("imgs/image\ 1\ \(1\).png");	
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+.ab__body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("imgs/image\ 1\ \(1\).png");	
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@font-face {
+	font-family: "Murecho-VariableFont_wght";
+	src: url("fonts/Murecho-VariableFont_wght.ttf");
+}
+
+.conteiner{
+	max-width: 1379px;
+	margin: 0 auto;
+}
+
+.header__conteiner{
+	margin-top: 22px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 16px;
+}
+
+.header__logo{
+	
+}
+
+.header__right-bar{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	
+}
+
+.header__name{
+	
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 64px;
+	font-weight: 300;
+	
+}
+
+.white{
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 64px;
+	font-weight: 500;
+	color: white;
+}
+
+.header__nav{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	gap: 55px;
+}
+
+.header__link{
+	color: white;
+	text-decoration: none;
+}
+
+.header__link:hover{
+	color: grey;
+}
+
+.content__conteiner{
+	max-width: 1159px;
+	margin: 0 auto;
+}
+
+.content__name{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 85px;
+	font-weight: 900;
+	color: white;
+	margin-bottom: 16px;
+}
+
+.description{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 27px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.content__but{
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 20px;
+	font-weight: 900;
+	color: white;
+	padding: 8px;
+	background-color: rgba(61, 57, 57, 1);
+	border-radius: 30px;
+	box-shadow: 1px 1px 8px white;
+	text-decoration: none;
+	
+}
+
+.footer__conteinerIdex{
+	
+	display: flex;
+	flex-direction: row;
+	gap: 28px;
+	margin-top: 200px;
+	
+}
+
+.footer__conteiner{
+	
+	display: flex;
+	flex-direction: row;
+	gap: 28px;
+	margin-top: 30px;
+	
+}
+
+.med__text{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 32px;
+	font-weight: 500;
+	color: white;
+	
+}
+
+
+
+
+
+
+
+
+
+.cat__conteiner{
+	max-width: 1159px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.gif{
+	width: 250px;
+	margin-bottom: px;
+}
+
+.cat__name{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 32px;
+	font-weight: 500;
+	color: white;
+	margin-bottom: 16px;
+}
+
+.cat__description{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.cat__rightSide{
+	position: relative;
+	height: 400px;
+	
+}
+.c1{
+	position: absolute;
+	width: 350px;
+	height: 200px;
+	top: 25%;
+}
+
+.c2{
+	position: absolute;
+	width: 350px;
+	height: 200px;
+	top: 5%;
+	left: 15%;
+}
+
+.c3{
+	position: absolute;
+	width: 350px;
+	height: 200px;
+	top: 25%;
+	left: 35%;
+}
+
+.c4{
+	position: absolute;
+	width: 350px;
+	height: 200px;
+	top: 35%;
+	left: 15%;
+	z-index: -1;
+}
+
+
+
+
+
+
+.cat__descriptionTab{
+	padding: 0;
+	margin: 0;
+	font-family: "Murecho-VariableFont_wght";
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 16px;
+	border: 5px solid rgb(92, 92, 92);
+	background-color: white;
+}
+
+table{
+	max-width: 700px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+td{
+	border: 3px solid white;
+}
+
+.last{
+	height: 100px;
+}
