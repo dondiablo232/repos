@@ -1,0 +1,327 @@
+*{
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "mukta";
+	src: url("fonts/Mulish-VariableFont_wght.ttf");
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	
+	background: linear-gradient(to top right, #B17463, #FED490);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.ab__body{
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	
+	background: linear-gradient(to top right, #B17463, #FED490);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.center{
+	text-align: center;
+}
+
+
+.conteiner{
+	max-width: 1252px;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+.header__conteiner{
+	margin-top: 21px;
+	margin-bottom: 60px;
+}
+
+.header__content{
+	max-width: 1048px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.content__rightSide{
+	display: flex;
+	flex-direction: column;
+}
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	font-family: "mukta";
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.rightSide__nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	margin-top: 25px;
+	gap: 37px;
+}
+
+.rightSide__link{
+	margin: 0px;
+	padding: 0px;
+	font-family: "mukta";
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+.rightSide__link:hover{
+	color: orangered;
+}
+
+.main{
+	height: 100vh;
+	background-image: url("imgs/Group\ 5.png");
+	background-repeat: no-repeat;
+	background-position: right top 20px;
+	
+}
+
+
+
+.main__content{
+	max-width: 100%;
+	 
+	
+}
+
+.main__conteiner{
+	margin-bottom: 50px;
+}
+
+.main__name{
+	font-family: "mukta";
+	font-weight: bold;
+	font-size: 72px;
+	letter-spacing: -5px;
+	margin-bottom: 17px;
+	color: white;
+}
+
+.main__des{
+	font-family: "mukta";
+	font-weight: medium;
+	font-size: 24px;
+	
+	color: white;
+}
+
+.main__button{
+	
+	background-color: #2E3139;
+	font-family: "mukta";
+	font-weight: bolder;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border-radius: 34px;
+	border: 4px solid rgba(255, 255, 255, 0.95);
+	padding: 15px 25px;
+	
+}
+
+.foot{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 110px;
+}
+
+.main__adress{
+	margin-top: 240px;
+	font-family: "mukta";
+	font-weight: bolder;
+	font-size: 20px;
+	color: white;
+	
+	
+}
+
+.footer__content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	height: 100%;
+	
+}
+
+.footer__conteiner{
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	justify-content: space-between;
+}
+
+.footer__link{
+	margin: 0px;
+	padding: 0px;
+	font-family: "mukta";
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+}
+
+.about__name{
+	font-family: "mukta";
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: -5px;
+	margin-bottom: 17px;
+	color: white;
+}
+
+main{
+	
+}
+
+.about__des{
+	font-family: "mukta";
+	font-weight: medium;
+	font-size: 24px;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.sloi{
+	position: relative;
+	height: 330px;
+	
+	width: 65%;
+}
+
+.sl{
+	width: 250px;
+	height: 300px;
+}
+.slois1{
+	position: absolute;
+
+}
+
+.slois2{
+	position: absolute;
+	left: 15%;
+}
+
+.slois3{
+	position: absolute;
+	left: 30%;
+}
+
+.slois4{
+	position: absolute;
+	left: 45%;
+}
+
+.group{
+	display: flex;
+	flex-direction: row;
+}
+
+.abo__sides{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.abo__gif{
+	width: 350px;
+}
+
+.tab{
+	width: 100%;
+	 
+	display: flex;
+	justify-content: center;
+}
+
+table{
+	width: 80%;
+	border: 1px solid white;
+	background-color: rgba(187, 186, 186, 0.952);
+	margin-bottom: 25px;
+}
+
+.about__name2{
+	margin-top: 20px;
+	font-family: "mukta";
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: -5px;
+	margin-bottom: 17px;
+	color: white;
+}
+
+td{
+	font-family: "mukta";
+	font-weight: medium;
+	font-size: 20px;
+	color: black;
+	border: 1px solid white;
+}
+
+.tab__des{
+	font-family: "mukta";
+	font-weight: medium;
+	font-size: 16px;
+	color: black;
+	border: 1px solid white;
+}
+
+.ab__video{
+	width: 270px;
+	height: 200px;
+}
+
+.id{
+	font-family: "mukta";
+	font-weight: medium;
+	font-size: 18px;
+	color: silver;
+	border: 1px solid white;
+	margin-bottom: 5px;
+}
+
+.rev__des{
+	font-family: "mukta";
+	font-weight: medium;
+	font-size: 16px;
+	color: black;
+	border: 1px solid white;
+}
+
+.reviews{
+	padding: 20px;
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.rev__des:not(:last-child){
+	border-bottom-color: black;
+}
